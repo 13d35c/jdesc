@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101925">
+  <meta name="description" content="Independent subtitle practice for timing, translation, formatting, and general subtitle craft.">
+  <title>Subtitle Practice Studio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;background:#0c141f;color:#ecf2f5}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 80% -15%,#25364b 0,transparent 42%),#0c141f}button,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.48}a{color:#b8ea61;text-underline-offset:3px}a:hover{color:#ddffa3}:focus-visible{outline:3px solid #b8ea61;outline-offset:3px}[hidden]{display:none!important}.shell{width:min(1180px,calc(100% - 48px));margin:auto}.masthead{min-height:102px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #344253}.brand{display:flex;align-items:center;gap:14px}.brand-mark{display:grid;place-items:center;width:43px;height:43px;border:1px solid #b8ea61;color:#b8ea61;border-radius:10px;font-size:27px}.brand strong,.brand span{display:block}.brand strong{font-size:17px;letter-spacing:.01em}.brand div span{font-size:13px;color:#a8b9c7;margin-top:3px}.privacy{font-size:13px;color:#a8b9c7}.privacy span{color:#b8ea61;margin-left:6px}.toolbar{display:flex;align-items:end;justify-content:space-between;gap:24px;padding:38px 0 28px}.toolbar h1{font-size:clamp(28px,3.8vw,44px);line-height:1.1;letter-spacing:-.04em;margin:0}.toolbar p{margin:10px 0 0;color:#a8b9c7}.tools{display:flex;align-items:center;gap:11px;flex-wrap:wrap}.tools label{font-size:14px;color:#a8b9c7}.tools select,.secondary{border:1px solid #495a69;background:#182531;color:#ecf2f5;border-radius:9px;padding:11px 13px;min-height:44px}.tools select{min-width:182px}.secondary:hover:not(:disabled){background:#263746;border-color:#89a0ae}.secondary span{display:inline-grid;place-items:center;min-width:23px;height:23px;border-radius:5px;background:#344758;margin-left:7px;font-size:12px}.practice,.result,.review{border:1px solid #425466;border-radius:17px;background:#172432;box-shadow:0 24px 70px #02081355;overflow:hidden}.question-head{padding:22px 28px 17px;display:flex;align-items:center;justify-content:space-between}.eyebrow{color:#b8ea61;letter-spacing:.13em;font-size:12px;font-weight:800}.progress-label{color:#bdcbd4;font-size:14px;font-variant-numeric:tabular-nums}.progress-track{height:4px;background:#2b3d4e}.progress-track span{display:block;width:0;height:100%;background:#b8ea61;transition:width .3s}.question-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.scenario{padding:43px 36px 48px;border-right:1px solid #425466;min-height:430px;background:linear-gradient(150deg,#1c2e40,#142331 78%)}.category{display:inline-block;border:1px solid #577266;border-radius:100px;color:#c6ebbb;padding:6px 11px;font-size:13px;font-weight:650}.scenario h2{font-size:clamp(23px,2.8vw,34px);line-height:1.22;letter-spacing:-.028em;margin:23px 0 27px;max-width:600px}.scene{border-left:3px solid #b8ea61;background:#101d29;border-radius:0 8px 8px 0;padding:18px 20px;color:#cddbe3;font-size:16px;line-height:1.55;white-space:pre-wrap;font-variant-numeric:tabular-nums}.hint{font-size:13px;color:#98adbb;margin:25px 0 0}.answer-panel{padding:29px 30px 33px;display:flex;flex-direction:column;align-items:stretch}.answers{display:grid;gap:11px}.option{width:100%;min-height:70px;display:flex;text-align:left;align-items:center;gap:15px;background:#1e2e3b;color:#ecf2f5;border:1px solid #4a5d6b;border-radius:10px;padding:14px 16px;line-height:1.42}.option:hover:not(:disabled){background:#2b4050;border-color:#a8c1d0}.option:disabled{opacity:1}.option-key{flex:none;border:1px solid #627887;color:#c7d4dd;border-radius:6px;width:28px;height:28px;display:grid;place-items:center;font-size:13px}.option.is-correct{background:#244638;border-color:#7cd69c}.option.is-correct .option-key{border-color:#7cd69c;color:#baf3c7}.option.is-wrong{background:#4b3035;border-color:#e89696}.option.is-wrong .option-key{border-color:#e89696;color:#ffcccc}.feedback{margin-top:18px;border-radius:10px;padding:17px 19px;line-height:1.5;background:#243d36;border:1px solid #679e7b}.feedback.incorrect{background:#45363b;border-color:#c7888a}.feedback strong{font-size:16px}.feedback p{margin:8px 0 10px;color:#e0e9eb}.feedback a{font-size:14px}.primary{border:0;background:#b8ea61;color:#18251a;border-radius:9px;padding:13px 19px;min-height:46px;font-weight:750}.primary:hover:not(:disabled){background:#d1f78a}.answer-panel>.primary{margin-top:16px;align-self:flex-start}.result{padding:50px;min-height:270px}.result h2{font-size:36px;letter-spacing:-.035em;margin:15px 0 6px}.result p{color:#bfd0d9;max-width:620px;line-height:1.55}.result-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.review{padding:32px}.review-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}.review h2{margin:9px 0 0;font-size:28px}.review-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px 0}.review-card{border:1px solid #445769;border-radius:11px;padding:22px;background:#1d2d3b}.review-card h3{font-size:17px;line-height:1.35;margin:17px 0}.review-card p{line-height:1.5;margin:10px 0}.review-card .muted{color:#f0b2b1}.review-card a{font-size:14px}footer{display:flex;gap:30px;justify-content:space-between;padding:25px 1px 40px;color:#91a7b5;font-size:13px;line-height:1.55}footer p{margin:0;max-width:740px}footer p:last-child{min-width:200px;text-align:right}footer a{color:#b4cbdb}@media(max-width:850px){.toolbar{align-items:start;flex-direction:column}.question-grid{grid-template-columns:1fr}.scenario{border-right:0;border-bottom:1px solid #425466;min-height:auto;padding:30px}.answer-panel{padding:24px 30px 30px}.review-list{grid-template-columns:1fr}footer{display:block}footer p:last-child{text-align:left;margin-top:13px}}@media(max-width:520px){.shell{width:min(100% - 24px,1180px)}.masthead{min-height:78px}.brand div span,.privacy{font-size:12px}.privacy{max-width:75px;text-align:right}.toolbar{padding:29px 0 21px}.tools{width:100%;display:grid;grid-template-columns:auto 1fr;gap:10px}.tools .secondary{grid-column:1/-1}.question-head{padding:18px 20px 14px}.scenario{padding:25px 21px}.scenario h2{margin:18px 0 21px}.answer-panel{padding:19px 17px 24px}.option{min-height:63px}.result,.review{padding:26px 21px}.review-heading{align-items:start;flex-direction:column}.result h2{font-size:30px}}
+
+.mode-tabs{display:flex;gap:6px;margin-bottom:12px}.mode-tab{border:1px solid #43586b;background:#152332;color:#b9cbd5;padding:12px 19px;min-height:46px;border-radius:10px;font-weight:700}.mode-tab[aria-selected="true"]{background:#b8ea61;border-color:#b8ea61;color:#14231b}.mode-tab:hover:not([aria-selected="true"]){background:#26394a}.tools #topic-wrap{display:flex;align-items:center;gap:9px}body[data-mode="timeline"] #topic-wrap{display:none}.timeline-practice{border:1px solid #425466;border-radius:17px;background:#172432;box-shadow:0 24px 70px #02081355;overflow:hidden}.timeline-intro{padding:30px 32px 22px}.timeline-intro h2{font-size:clamp(23px,2.7vw,32px);line-height:1.2;letter-spacing:-.025em;margin:15px 0 7px}.timeline-intro p{color:#c3d3dc;line-height:1.5;margin:0;max-width:760px}.editor{margin:0 32px 20px;background:#0d1722;border:1px solid #516173;border-radius:11px;padding:16px 17px 12px}.ruler{height:38px;position:relative;margin:0 4px;border-bottom:1px solid #587080;background:repeating-linear-gradient(90deg,transparent 0 calc(6.25% - 1px),#3b5062 calc(6.25% - 1px) 6.25%)}.ruler span{position:absolute;top:3px;transform:translateX(-50%);color:#acc0cc;font-size:12px;font-variant-numeric:tabular-nums}.ruler span:first-child{transform:none}.ruler span:last-child{transform:translateX(-100%)}.track{height:188px;position:relative;background:linear-gradient(#111e2b,#0c1722);margin:0 4px;overflow:hidden;touch-action:none}.track #waveform{position:absolute;inset:0;width:100%;height:100%}.shot-layer,.audio-layer{position:absolute;inset:0;pointer-events:none}.shot-marker{position:absolute;top:0;bottom:0;border-left:2px solid #f0a649;z-index:3}.shot-marker span{display:block;position:absolute;top:7px;left:5px;color:#ffce89;white-space:nowrap;font-size:11px;font-weight:800;letter-spacing:.08em;background:#0d1722bb;padding:3px 5px}.subtitle-event,.second-event,.ideal-event{position:absolute;top:59px;height:106px;border-radius:5px;display:flex;align-items:start;justify-content:center;padding-top:14px;font-size:12px;font-weight:800;letter-spacing:.07em;white-space:nowrap}.subtitle-event{z-index:4;background:#284e79bf;border:2px solid #b5d7f0;color:#e5f2ff;cursor:grab;touch-action:none;min-width:7px}.subtitle-event:active{cursor:grabbing}.subtitle-event.locked{cursor:default}.event-text{overflow:hidden;text-overflow:ellipsis;pointer-events:none}.event-handle{position:absolute;top:0;height:100%;width:23px;border:0;background:#d0e8fb55;z-index:5;touch-action:none;cursor:ew-resize}.event-handle.left{left:0;border-right:2px solid #eaf6ff}.event-handle.right{right:0;border-left:2px solid #eaf6ff}.event-handle:disabled{opacity:.7;cursor:default}.second-event{z-index:2;background:#284e797a;border:2px solid #759bbc;color:#c6ddec;pointer-events:none}.ideal-event{z-index:3;border:3px dashed #b8ea61;background:#b8ea6125;pointer-events:none}.track-legend{display:flex;gap:22px;flex-wrap:wrap;color:#adbfcb;font-size:12px;margin-top:12px}.track-legend span{display:flex;align-items:center;gap:7px}.track-legend i{display:inline-block;width:15px;height:10px}.legend-wave{background:#83a9d4}.legend-cut{border-left:3px solid #f0a649}.legend-event{border:2px solid #b5d7f0;background:#284e79}.timing-controls{display:grid;grid-template-columns:auto minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:16px;padding:0 32px}.time-value{min-width:115px;background:#0e1c28;border:1px solid #435d6d;border-radius:8px;padding:8px 11px}.time-value span{display:block;color:#9eb5c4;font-size:11px;font-weight:800;letter-spacing:.1em}.time-value strong{display:block;margin-top:3px;font-size:14px;font-variant-numeric:tabular-nums}.frame-slider{font-size:13px;color:#b9cbd5;display:block}.frame-slider input{display:block;width:100%;accent-color:#b8ea61;margin:8px 0 0;min-height:24px}.timeline-actions{padding:25px 32px 30px;display:flex;align-items:center;gap:17px;flex-wrap:wrap}.timeline-actions span{color:#9db3c1;font-size:13px}.timeline-feedback{margin:0 32px 16px}.timeline-feedback .ideal-note{font-size:13px;color:#d9e5dd}.timeline-next{margin:0 32px 30px}.timeline-summary{padding:36px 32px 42px}.timeline-summary h2{font-size:30px;letter-spacing:-.03em;margin:0 0 9px}.timeline-summary p{color:#c3d3dc;line-height:1.5;max-width:650px}.timeline-summary .review-heading h2{margin:8px 0 0}.timeline-summary .review-card p{max-width:none}@media(max-width:850px){.timing-controls{grid-template-columns:auto minmax(0,1fr)}.editor{margin-left:23px;margin-right:23px}.timeline-intro{padding-left:23px;padding-right:23px}.timeline-actions,.timing-controls{padding-left:23px;padding-right:23px}.timeline-feedback{margin-left:23px;margin-right:23px}.timeline-next{margin-left:23px}}@media(max-width:520px){.mode-tab{flex:1;padding:11px 8px}.editor{margin:0 12px 18px;padding:10px 8px}.ruler span{font-size:10px}.ruler span:nth-child(even){display:none}.track{height:168px}.subtitle-event,.second-event,.ideal-event{top:48px;height:101px}.event-handle{width:18px}.shot-marker span{font-size:9px}.timeline-intro{padding:24px 18px 18px}.timeline-actions{padding:20px 18px 25px}.timing-controls{padding:0 18px;gap:10px}.time-value{min-width:111px}.timeline-feedback{margin:0 18px 15px}.timeline-next{margin:0 18px 25px}.timeline-summary{padding:27px 20px}.track-legend{gap:12px}}
+
+.shot-marker{z-index:6}
+.frame-metrics{display:flex;align-items:center;gap:10px 18px;flex-wrap:wrap;padding:13px 32px 0;color:#dbe9ef;font-size:14px;font-variant-numeric:tabular-nums}.frame-metrics>span:not(.timecode-help){background:#0e1c28;border:1px solid #435d6d;border-radius:7px;padding:6px 9px}.frame-metrics .timecode-help{color:#a9bdca;font-size:13px}@media(max-width:850px){.frame-metrics{padding-left:23px;padding-right:23px}}@media(max-width:520px){.frame-metrics{padding-left:18px;padding-right:18px}}
+.ruler{height:51px;background:none;overflow:hidden}.frame-tick{position:absolute;bottom:0;display:block;width:1px;background:#526a79}.frame-tick.minor{height:7px}.frame-tick.quarter{height:14px;background:#819aaa}.frame-tick.major{height:22px;width:2px;background:#c0d0db}@media(max-width:520px){.ruler span:nth-child(even){display:block}.ruler span:nth-of-type(even){display:none}}
+.ruler span:first-of-type{transform:none}
+.track .subtitle-event,.track .second-event,.track .ideal-event{top:0;height:100%;border-radius:0 0 5px 5px}
+
+/* Frame-by-frame feedback separates verdicts from the rule explanation. */
+.timing-feedback-title{display:block;margin-bottom:13px}
+.timing-assessments{display:grid;gap:9px;margin-bottom:15px}
+.timing-assessment{display:flex;align-items:flex-start;gap:12px;padding:11px 12px;border:1px solid #547365;border-radius:8px;background:#172f2b}
+.timing-assessment.is-wrong{border-color:#b4797d;background:#382e35}
+.timing-symbol{display:grid;place-items:center;flex:none;width:25px;height:25px;border-radius:50%;background:#b8ea61;color:#162419;font-size:18px;font-weight:800;line-height:1}
+.is-wrong .timing-symbol{background:#eea2a6;color:#301e24}
+.timing-assessment strong{display:block;font-size:15px}
+.timing-assessment p{margin:3px 0 0;font-size:15px;line-height:1.5}
+.timing-rule{display:flex;align-items:flex-start;gap:11px;padding:12px;margin-bottom:12px;border:1px solid #66798a;border-radius:8px;background:#1c2d3b}
+.timing-info-icon{display:grid;place-items:center;flex:none;width:24px;height:24px;border:1px solid #a9c9df;border-radius:50%;color:#d5ecfb;font-size:16px;font-weight:800;font-family:Georgia,serif;line-height:1}
+.timing-rule strong{display:block;font-size:15px}
+.timing-rule p{margin:4px 0 0;font-size:15px;line-height:1.5}
+.timing-rule .ideal-note{margin-top:8px;font-size:14px;color:#c9d9e2}
+@media(max-width:520px){.timing-assessment,.timing-rule{padding:10px;gap:9px}.timing-assessment p,.timing-rule p{font-size:14px}}
+
+/* The event edges are narrow visual lines; the invisible handles retain a generous drag target. */
+.subtitle-event{border-top-width:2px;border-bottom-width:2px;border-left-width:4px;border-right-width:4px}
+.event-handle,.event-handle.left,.event-handle.right{background:transparent;border:0}
+
+/* Source notes read across the full page; local storage notice ends the page. */
+.site-footer{display:block;padding:25px 1px 40px}
+.site-footer p,.site-footer p:last-child{max-width:none;min-width:0;text-align:left}
+.site-footer p+p{margin-top:12px}
+.site-footer .frame-note{color:#a8b9c7}
+.site-footer .storage-note{border-top:1px solid #344253;margin-top:19px;padding-top:15px}
+
+/* Keep the two source guides distinct inside one practice tool. */
+.guide-tabs{display:flex;gap:9px;padding:0 0 13px;margin:0 0 13px;border-bottom:1px solid #344253}
+.guide-tab{min-height:46px;padding:11px 19px;border:1px solid #526779;border-radius:10px;background:#142231;color:#d1e0e8;font-weight:750}
+.guide-tab[aria-selected="true"]{border-color:#b8ea61;background:#b8ea61;color:#14231b}
+.guide-tab:hover:not([aria-selected="true"]){background:#26394a}
+#timing-modes{margin-left:11px}
+@media(max-width:520px){.guide-tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px}.guide-tab{padding:9px 7px;font-size:14px}#timing-modes{margin-left:0}}
+
+/* Make guidance links and the correct answer stand out clearly. */
+.site-footer a{color:#203363!important;text-decoration:underline;font-weight:750}
+.ideal-event{border-color:#d6a84f;background:#d6a84f66;box-shadow:0 0 0 1px #fff8 inset}
+
+/* J. Michael inspired palette: white, powder blue, slate blue, and deep navy. */
+:root{color-scheme:light;background:#ffffff;color:#203363}
+body{background:radial-gradient(circle at 80% -15%,#a4b6ce 0,transparent 42%),#ffffff;color:#203363}
+a{color:#203363}a:hover{color:#6380a6}:focus-visible{outline-color:#6380a6}
+.masthead{border-bottom-color:#a4b6ce}.brand-mark{border-color:#6380a6;color:#203363}.brand div span,.privacy{color:#6380a6}
+.toolbar p,.progress-label{color:#6380a6}.tools label{color:#6380a6}.tools select,.secondary{border-color:#a4b6ce;background:#ffffff;color:#203363}.secondary:hover:not(:disabled){background:#eef3f8;border-color:#6380a6}.secondary span{background:#a4b6ce;color:#203363}
+.practice,.result,.review,.timeline-practice{border-color:#a4b6ce;background:#f7f9fc;box-shadow:0 24px 70px #20336322}.progress-track{background:#d8e1ec}.progress-track span,.primary,.mode-tab[aria-selected="true"],.guide-tab[aria-selected="true"]{background:#6380a6}.primary{color:#ffffff}.primary:hover:not(:disabled){background:#203363}
+.scenario{border-color:#a4b6ce;background:linear-gradient(150deg,#eef3f8,#ffffff 78%)}.scene{border-left-color:#6380a6;background:#ffffff;color:#203363}.hint{color:#6380a6}.category{border-color:#6380a6;color:#203363}
+.answer-panel,.option{color:#203363}.option{background:#ffffff;border-color:#a4b6ce}.option:hover:not(:disabled){background:#eef3f8;border-color:#6380a6}.option-key{border-color:#a4b6ce;color:#203363}.feedback{background:#eaf2ec;border-color:#6380a6}.feedback.incorrect{background:#f7e9ea;border-color:#b97982}.feedback p{color:#203363}
+.question-head,.timeline-intro,.timeline-actions,.timing-controls,.frame-metrics{color:#203363}.eyebrow{color:#6380a6}.timeline-intro p,.timeline-actions span,.frame-metrics .timecode-help{color:#6380a6}.editor{background:#203363;border-color:#6380a6}.track{background:linear-gradient(#203363,#17264b)}.ruler{border-color:#a4b6ce}.subtitle-event{background:#6380a6bf;border-color:#ffffff;color:#ffffff}.ideal-event{border-color:#a4b6ce;background:#a4b6ce55}.track-legend{color:#dce6f0}.legend-wave{background:#a4b6ce}.legend-event{border-color:#ffffff;background:#6380a6}.time-value,.frame-metrics>span:not(.timecode-help){background:#ffffff;border-color:#a4b6ce}.time-value span{color:#6380a6}.frame-slider{color:#6380a6}.frame-slider input{accent-color:#6380a6}
+.timing-assessment{background:#eaf2ec;border-color:#6380a6}.timing-assessment.is-wrong{background:#f7e9ea;border-color:#b97982}.timing-rule{background:#eef3f8;border-color:#a4b6ce}.timing-info-icon{border-color:#6380a6;color:#203363}.timing-rule .ideal-note{color:#6380a6}.site-footer{color:#6380a6}.site-footer .frame-note{color:#6380a6}.site-footer .storage-note{border-color:#a4b6ce}.guide-tabs{border-color:#a4b6ce}.guide-tab,.mode-tab{border-color:#a4b6ce;background:#ffffff;color:#203363}.guide-tab:hover:not([aria-selected="true"]),.mode-tab:hover:not([aria-selected="true"]){background:#eef3f8}.mode-tab[aria-selected="true"],.guide-tab[aria-selected="true"]{border-color:#6380a6;color:#ffffff}
+
+/* The correct-answer range uses rose so it stays distinct from yellow shot changes. */
+.ideal-event{border-color:#f2a6b3!important;background:#f2a6b366!important;box-shadow:0 0 0 1px #ffffff inset}
+.site-footer a{color:#203363!important;text-decoration:underline;font-weight:750}
+
+
+/* Positive green marks the recommended answer range. */
+.ideal-event{border-color:#76c893!important;background:#76c89366!important;box-shadow:0 0 0 1px #ffffff inset}
+
+
+.timeline-question-view>.frame-note{margin:0 32px 18px;padding:10px 14px;border-left:3px solid #6380a6;border-radius:0 8px 8px 0;background:#eef3f8;color:#6380a6;font-size:14px;line-height:1.45}
+@media(max-width:850px){.timeline-question-view>.frame-note{margin-left:23px;margin-right:23px}}
+@media(max-width:520px){.timeline-question-view>.frame-note{margin-left:18px;margin-right:18px;font-size:13px}}
+
+
+/* Compact the stacked guide and mode navigation. */
+.guide-tabs{gap:7px;padding-bottom:8px;margin-bottom:7px}.mode-tabs{gap:7px;margin:0 0 16px 11px}.guide-tab,.mode-tab{min-height:42px;padding:9px 16px}
+@media(max-width:520px){.guide-tabs{gap:5px;padding-bottom:6px;margin-bottom:5px}.mode-tabs{gap:5px;margin-bottom:13px}.guide-tab,.mode-tab{min-height:40px;padding:8px 10px}}
+
+
+/* Keep guide and practice-mode selectors on one desktop row. */
+.guide-tabs{display:inline-flex;vertical-align:middle;border-bottom:0;padding-bottom:0;margin:0 0 22px}.mode-tabs{display:inline-flex;vertical-align:middle;margin:0 0 22px 10px}.guide-tabs+.mode-tabs{border-bottom:1px solid #a4b6ce;padding-bottom:10px}
+@media(max-width:520px){.guide-tabs{display:grid;margin-bottom:5px}.mode-tabs{display:flex;margin:0 0 13px}.guide-tabs+.mode-tabs{border-bottom:0;padding-bottom:0}}
+
+/* Header-style guide navigation inspired by the reference layout. */
+.guide-tabs{display:flex;align-items:center;gap:25px;width:100%;padding:0 0 10px;margin:0 0 13px;border-bottom:1px solid #a4b6ce}
+.guide-tab{min-height:40px;padding:8px 2px;border:0;border-radius:0;background:transparent;color:#6380a6;font-weight:750}
+.guide-tab[aria-selected='true']{background:transparent;border:0;border-bottom:3px solid #6380a6;color:#203363}
+.guide-tab:hover:not([aria-selected='true']){background:transparent;color:#203363}
+.mode-tabs{display:flex;gap:7px;margin:0 0 16px 11px}
+@media(max-width:520px){.guide-tabs{display:flex;gap:17px;padding-bottom:7px;margin-bottom:9px}.guide-tab{font-size:14px;padding:7px 1px}.mode-tabs{margin-left:0}}
+
+/* The guide navigation shares the header row with the studio title. */
+.masthead{align-items:center}.masthead>.guide-tabs{width:auto;margin:0 0 0 auto;padding:0;border-bottom:0}.masthead>.guide-tabs .guide-tab{white-space:nowrap}
+@media(max-width:850px){.masthead{flex-wrap:wrap;padding:16px 0}.masthead>.guide-tabs{margin-left:auto}}
+@media(max-width:520px){.masthead>.guide-tabs{width:100%;margin:13px 0 0;padding-bottom:7px;border-bottom:1px solid #a4b6ce}.masthead>.guide-tabs .guide-tab{flex:1;text-align:center}}
+
+
+.timeline-question-view>.frame-note{width:calc(100% - 64px);margin-left:32px;margin-right:32px}
+@media(max-width:850px){.timeline-question-view>.frame-note{width:calc(100% - 46px);margin-left:23px;margin-right:23px}}
+@media(max-width:520px){.timeline-question-view>.frame-note{width:calc(100% - 36px);margin-left:18px;margin-right:18px}}
+
+
+/* Distinguish mixed results from all-wrong feedback. */
+.timing-assessment.is-right{border-color:#76c893;background:#eaf2ec}
+.timeline-feedback.incorrect:has(.timing-assessment.is-right){background:#eef3f8;border-color:#a4b6ce}
+
+
+.timing-rule{background:#dce8f5;border-color:#8ca6c2}
+
+
+body{background:radial-gradient(circle at 80% -15%,#dce6f1 0,transparent 34%),#ffffff}
+
+
+/* Force the frame note into the same visual system as the editor controls. */
+.frame-note{display:block!important;width:calc(100% - 64px)!important;margin:0 32px 18px!important;padding:11px 14px!important;border:1px solid #a4b6ce!important;border-left:4px solid #6380a6!important;border-radius:8px!important;background:#eef3f8!important;color:#6380a6!important;font-size:14px!important;line-height:1.45!important}
+@media(max-width:850px){.frame-note{width:calc(100% - 46px)!important;margin-left:23px!important;margin-right:23px!important}}
+@media(max-width:520px){.frame-note{width:calc(100% - 36px)!important;margin-left:18px!important;margin-right:18px!important;font-size:13px!important}}
+
+
+/* Frame note is secondary guidance, so keep it as aligned text. */
+.frame-note{display:block!important;width:calc(100% - 64px)!important;margin:0 32px 18px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#6380a6!important;font-size:14px!important;line-height:1.45!important}
+@media(max-width:850px){.frame-note{width:calc(100% - 46px)!important;margin-left:23px!important;margin-right:23px!important}}
+@media(max-width:520px){.frame-note{width:calc(100% - 36px)!important;margin-left:18px!important;margin-right:18px!important;font-size:13px!important}}
+
+
+.subtitle-event{background:#6380a66b}
+.subtitle-event.is-too-short{background:rgba(205,105,125,.32)}
+.duration-value:has(.is-too-short) span,.duration-value strong.is-too-short{color:#b3425b}
+
+/* Keep the result container neutral; correctness is shown by the assessment rows. */
+.timeline-feedback,.timeline-feedback.correct,.timeline-feedback.incorrect,.timeline-feedback.incorrect:has(.timing-assessment.is-right){background:#eef1f4;border-color:#a4b6ce}
+
+
+/* Edge dragging mirrors the professional timing-tool interaction. */
+.timing-controls{grid-template-columns:auto auto;justify-content:space-between}
+.timing-controls .frame-slider{display:none}
+.timing-controls{grid-template-columns:repeat(3,auto);justify-content:center;gap:2em;margin:20px 32px 10px;padding:0}.time-value{min-width:0;background:transparent;border:0;padding:0;text-align:center;display:flex;align-items:baseline;justify-content:center;gap:7px}.time-value span{font-size:11px;color:#6380a6}.time-value strong{margin-top:0;font-size:14px}.duration-value strong{font-weight:700}.frame-metrics{display:none}
+@media(max-width:520px){.timing-controls{grid-template-columns:repeat(3,auto);gap:1em;margin:16px 18px 0}.time-value{display:block}.time-value span,.time-value strong{display:block}.time-value strong{font-size:12px}}
+
+
+/* Optional practice aid, anchored to the out-time edge. */
+.timing-controls{position:relative;padding-right:190px;min-height:30px}
+.offset-toggle{position:absolute;right:0;display:flex;align-items:center;gap:8px;font-size:12px;color:#203363;cursor:pointer;white-space:nowrap}
+.offset-toggle input{position:absolute;opacity:0;width:1px;height:1px}
+.offset-switch{width:34px;height:20px;border-radius:12px;background:#a4b6ce;border:1px solid #6380a6;position:relative}
+.offset-switch:after{content:'';position:absolute;top:2px;left:2px;width:14px;height:14px;background:white;border-radius:50%;transition:transform .15s}
+.offset-toggle input:checked+.offset-switch{background:#6380a6}
+.offset-toggle input:checked+.offset-switch:after{transform:translateX(14px)}
+.offset-toggle input:focus-visible+.offset-switch{outline:3px solid #203363;outline-offset:3px}
+.editor{position:relative}
+.frame-offset{position:absolute;z-index:10;transform:translateX(-50%);padding:7px 10px;border:1px solid #a4b6ce;border-radius:7px;background:#203363;color:#fff;font-size:12px;font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap;pointer-events:none;box-shadow:0 3px 10px #17264b33}
+.frame-offset{--offset-background:#203363;--offset-border:#c7afea;background:var(--offset-background);border-color:var(--offset-border);color:#e5dafa}
+.frame-offset[data-reference="shot"]{--offset-background:#49351f;--offset-border:#efb34f;color:#ffe0a3}
+.frame-offset:before{content:'';position:absolute;top:-5px;left:var(--pointer-x);width:8px;height:8px;background:var(--offset-background);border-left:1px solid var(--offset-border);border-top:1px solid var(--offset-border);transform:translateX(-50%) rotate(45deg)}
+@media(max-width:850px){.timing-controls{padding-right:0;padding-bottom:34px}.offset-toggle{bottom:0;right:0}}
+
+/* Feedback timecodes preview their exact frame without changing the event. */
+.feedback-timecode{display:inline;padding:0;border:0;border-radius:3px;background:transparent;color:inherit;font:inherit;line-height:inherit;cursor:pointer;font-variant-numeric:tabular-nums;text-decoration:underline;text-decoration-color:#b8a2df80;text-underline-offset:3px}
+.feedback-timecode.is-guided{background:#d8c8f580;text-decoration-color:#9076bd}
+.feedback-timecode:focus-visible{outline:2px solid #b8a2df;outline-offset:2px}
+#timecode-guide{position:absolute;width:0;z-index:15;pointer-events:none}
+#timecode-guide:before{content:'';position:absolute;top:0;bottom:0;left:-1.5px;border-left:3px dashed #c7afea}
+#timecode-guide>span{position:absolute;top:0;transform:translateX(-50%);padding:3px 5px;border-radius:4px;background:#d8c8f5;color:#203363;font-size:10px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums;line-height:1.3}
+
+/* Center every vertical stroke on its exact frame coordinate. */
+.track .subtitle-event,.track .second-event,.track .ideal-event{border-width:0;min-width:0}
+.subtitle-event{--edge-width:3px;--horizontal-edge-width:3px;--edge-style:solid}
+.second-event{--edge-width:3px;--horizontal-edge-width:3px;--edge-style:solid}
+.ideal-event{--edge-width:3px;--horizontal-edge-width:3px;--edge-style:dashed}
+.track .subtitle-event:before,.track .second-event:before,.track .ideal-event:before{content:'';position:absolute;top:0;bottom:0;left:calc(var(--edge-width) / -2);right:calc(var(--edge-width) / -2);border-style:var(--edge-style);border-width:var(--horizontal-edge-width) var(--edge-width);border-color:inherit;border-radius:inherit;pointer-events:none}
+.shot-marker{transform:translateX(-1px)}
+.frame-tick{transform:translateX(-50%)}
+
+/* Rule-question success states match the timeline assessments. */
+.option.is-correct{background:#eaf2ec;border-color:#76c893;color:#203363}
+.option.is-correct .option-key{background:transparent;border-color:#76c893;color:#203363}
+#feedback.correct{background:#eaf2ec;border-color:#76c893}
+.frame-offset[data-reference="subtitle"]{--offset-background:#293e58;--offset-border:#acc8e8;color:#e2efff}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">▣</span><div><strong>Subtitle Practice Studio</strong><span>Timing, translation, and subtitle craft</span></div></div>
+      <nav class="guide-tabs" aria-label="Study guide"><button id="timing-guide-tab" class="guide-tab" type="button" aria-selected="true">Timing guidelines</button><button id="general-guide-tab" class="guide-tab" type="button" aria-selected="false">General requirements</button></nav>
+    </header>
+
+    <main>
+      <div class="toolbar">
+        <div class="toolbar-copy"><h1 id="guide-heading">Time the subtitle.</h1><p id="guide-intro">24 fps practice. See the audio and the edit, then make your timing call.</p></div>
+        <div class="tools"><div id="topic-wrap"><label for="topic">Topic</label><select id="topic"><option value="all">All topics</option></select></div><button id="mistakes-button" class="secondary" type="button">Review mistakes <span id="missed-count">0</span></button></div>
+      </div>
+
+      <nav class="mode-tabs" id="timing-modes" aria-label="Timing practice mode"><button id="timeline-tab" class="mode-tab" type="button" aria-selected="true">Timeline drills</button><button id="rules-tab" class="mode-tab" type="button" aria-selected="false">Rule questions</button></nav>
+
+      <section id="timeline" class="timeline-practice" aria-live="off">
+        <div class="question-head"><span id="timeline-mode-label" class="eyebrow">TIMELINE DRILL · 24 FPS</span><span id="timeline-progress-label" class="progress-label"></span></div>
+        <div class="progress-track" role="progressbar" aria-label="Timeline drill progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="timeline-progress"><span id="timeline-progress-fill"></span></div>
+        <div id="timeline-question-view">
+          <div class="timeline-intro"><span id="timeline-category" class="category"></span><h2 id="timeline-question"></h2><p id="timeline-instruction"></p></div>
+          <div class="timing-controls"><div class="time-value"><span>IN:</span><strong id="start-value"></strong></div><label class="frame-slider">Move in-time <input id="start-slider" type="range" min="0" max="96" step="1" aria-label="Subtitle in-time, in frames"></label><div class="time-value"><span>OUT:</span><strong id="end-value"></strong></div><label class="frame-slider">Move out-time <input id="end-slider" type="range" min="0" max="96" step="1" aria-label="Subtitle out-time, in frames"></label><div class="time-value duration-value"><span>DURATION:</span><strong id="duration-value"></strong></div><label class="offset-toggle"><input id="show-frame-offset" type="checkbox" role="switch"><span class="offset-switch" aria-hidden="true"></span><span>Show timing offset</span></label></div>
+          <div class="editor" id="editor">
+            <div class="ruler" id="ruler" aria-hidden="true"></div>
+            <div class="track" id="track"><svg id="waveform" role="img" aria-label="Illustrative audio waveform" viewBox="0 0 960 188" preserveAspectRatio="none"></svg><div id="shot-layer" class="shot-layer"></div><div id="audio-layer" class="audio-layer"></div><div id="ideal-event" class="ideal-event" hidden></div><div id="second-event" class="second-event" hidden></div><div id="event" class="subtitle-event"><button id="start-handle" class="event-handle left" type="button" aria-label="Drag subtitle in-time"></button><span id="event-text" class="event-text">SUBTITLE</span><button id="end-handle" class="event-handle right" type="button" aria-label="Drag subtitle out-time"></button></div></div>
+            <div id="frame-offset-start" class="frame-offset" hidden></div><div id="frame-offset" class="frame-offset" hidden></div><div class="track-legend"><span><i class="legend-wave"></i> speech</span><span><i class="legend-cut"></i> shot change</span><span><i class="legend-event"></i> subtitle</span></div>
+          </div>
+          <p class="frame-note">Frame note: At 24 fps, 20 frames is 0.833 seconds. The timing page calls this "4/5 sec," while the general requirements say "5/6 sec." This trainer follows the 20-frame rule.</p>
+          <div class="timeline-actions"><button id="check-timing" class="primary" type="button">Check timing</button><span>Drag the event to move it, or drag either edge to adjust the in-time or out-time.</span></div>
+          <div id="timeline-feedback" class="feedback timeline-feedback" hidden></div><button id="timeline-next" class="primary timeline-next" type="button" hidden>Next drill</button>
+        </div>
+        <div id="timeline-result-view" class="timeline-summary" hidden><h2 id="timeline-result-title"></h2><p id="timeline-result-copy"></p><div class="result-actions"><button id="timeline-retry" class="primary" type="button">Retry missed drills</button><button id="timeline-restart" class="secondary" type="button">Practice all drills</button></div></div>
+        <div id="timeline-review-view" class="timeline-summary" hidden><div class="review-heading"><div><span class="eyebrow">MISTAKE REVIEW</span><h2>Timing decisions to revisit</h2></div><button id="timeline-back" class="secondary" type="button">Back</button></div><div id="timeline-review-list" class="review-list"></div><button id="timeline-review-retry" class="primary" type="button">Retry missed drills</button></div>
+      </section>
+
+      <section id="practice" class="practice" aria-live="off">
+        <div class="question-head"><span id="mode-label" class="eyebrow">PRACTICE</span><span id="progress-label" class="progress-label"></span></div>
+        <div class="progress-track" role="progressbar" aria-label="Session progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-track"><span id="progress-fill"></span></div>
+        <div class="question-grid">
+          <div class="scenario"><span id="category" class="category"></span><h2 id="question"></h2><div id="scene" class="scene"></div><p class="hint">Choose the best answer.</p></div>
+          <div class="answer-panel"><div id="answers" class="answers"></div><div id="feedback" class="feedback" hidden></div><button id="next-button" class="primary" type="button" hidden>Next question</button></div>
+        </div>
+      </section>
+
+      <section id="result" class="result" hidden aria-live="polite"><span class="eyebrow">SESSION COMPLETE</span><h2 id="result-title"></h2><p id="result-copy"></p><div class="result-actions"><button id="retry-button" class="primary" type="button">Retry missed concepts</button><button id="restart-button" class="secondary" type="button">Practice all again</button></div></section>
+
+      <section id="review" class="review" hidden><div class="review-heading"><div><span class="eyebrow">MISTAKE REVIEW</span><h2>What to watch for next time</h2></div><button id="back-button" class="secondary" type="button">Back to practice</button></div><div id="review-list" class="review-list"></div><button id="review-retry-button" class="primary" type="button">Retry missed concepts</button></section>
+
+      <footer class="site-footer">
+        <p class="site-note">Scenarios and waveforms are illustrative, based on Netflix's publicly available <a href="https://studiopartner.netflix.net/studio/subtitle-timing-guidelines" target="_blank" rel="noopener noreferrer">subtitle timing guidelines</a> and <a href="https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements" target="_blank" rel="noopener noreferrer">general requirements</a>. This tool is not affiliated with or endorsed by Netflix. You don't need an account; your answers and mistakes are saved only in your browser, on your device.</p>
+      </footer>
+    </main>
+  </div>
+<script>
+const SOURCES = {
+  timing: { label: 'Netflix timing guidelines', url: 'https://studiopartner.netflix.net/studio/subtitle-timing-guidelines' },
+  general: { label: 'General requirements', url: 'https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements' }
+};
+
+// The wording and examples are original practice scenarios, not excerpts from the guides.
+const QUESTIONS = [
+  {id:'min-19', topic:'Duration', question:'A one-word subtitle lasts 19 frames in a 24 fps file. What do you do?', scene:'Dialogue: "Oo." · event length: 19 frames', choices:['Leave it; a short word can be shorter than the minimum.','Extend it to at least 20 frames, if the surrounding timing allows.','Make every subtitle exactly 24 frames.'], answer:1, why:'20 frames is the minimum at 24 fps, even for a one-word event. Check the next event and any nearby shot change before extending.', source:'timing'},
+  {id:'min-long', topic:'Duration', question:'A long two-line subtitle lasts exactly 20 frames. Is that a good target?', scene:'Two full lines · 24 fps · no nearby event blocks an extension', choices:['Yes. Every event should aim for 20 frames.','No. Give longer text more time when possible; 20 frames is best reserved for one or two words.','No. Delete a line regardless of meaning.'], answer:1, why:'20 frames is a floor, not a comfortable reading target for two full lines. Extend the out-time where the shot and audio allow.', source:'timing'},
+  {id:'min-convert', topic:'Duration', question:'At 24 fps, what is the 20-frame minimum in seconds?', scene:'20 frames ÷ 24 frames per second', choices:['About 0.67 seconds','About 0.83 seconds','Exactly 1 second'], answer:1, why:'20 ÷ 24 = 0.833 seconds (5/6 second). The timing article says "4/5 sec" in parentheses, but its 20-frame rule and the general guide agree on 5/6 second.', source:'general'},
+  {id:'max-duration', topic:'Duration', question:'A single subtitle event runs for 7.4 seconds. What is the issue?', scene:'One event · 7.4 seconds on-screen', choices:['It exceeds the 7-second maximum.','It is fine whenever the shot is long.','It only matters for one-line subtitles.'], answer:0, why:'The general maximum is 7 seconds per event. Re-time or segment the text while keeping it readable and in sync.', source:'general'},
+  {id:'audio-in', topic:'Audio & sync', question:'The audio starts at frame 100. There is no shot change nearby. Which in-time is the best starting point?', scene:'First audible frame: 100 · no nearby shot change', choices:['Frame 100, or frame 98–99 just before it.','Frame 88, to give more reading time.','Frame 112, after the speaker finishes the phrase.'], answer:0, why:'Start on the first audible frame or one to two frames before it in this practice scenario. A nearby shot change can change the best in-time.', source:'timing'},
+  {id:'audio-out', topic:'Audio & sync', question:'Audio ends, with no following subtitle or nearby shot change. Where should the subtitle ideally go out?', scene:'Audio ends at 00:01:12:00 · clear screen afterward', choices:['Exactly when the audio stops.','Roughly half a second or more after the audio stops, if it still looks natural.','Two seconds before the audio stops.'], answer:1, why:'Let it stay around half a second after audio so viewers can finish reading. Watch back for a lingering effect.', source:'timing'},
+  {id:'audio-vs-shot', topic:'Audio & sync', question:'The half-second extension after audio would carry this subtitle across a shot change. The audio itself ends before the shot change. Where should you set the subtitle’s out-time?', scene:'Audio ends · shot change follows shortly · no dialogue across shot change', choices:['End two frames before the shot change.','Let the subtitle hang halfway into the next shot every time.','End on the exact last audio frame.'], answer:0, why:'Prefer a clean out-time two frames before the shot change when the dialogue does not cross it. Adjust wording or reading speed if needed.', source:'timing'},
+  {id:'shot-in', topic:'Shot changes', question:'A new shot begins at frame 200. The line starts 8 frames into that shot. Where should its subtitle start?', scene:'Shot starts: 200 · audio starts: 208 · 24 fps', choices:['At frame 200, the first frame of the new shot.','At frame 208, always exactly on the audio.','At frame 188, before the new shot.'], answer:0, why:'When audio starts on a shot change or within half a second after it (12 frames at 24 fps), bring the in-time to the shot change.', source:'timing'},
+  {id:'shot-out', topic:'Shot changes', question:'Your current out-time is 7 frames before a shot change. The dialogue has ended. Where should you usually move it?', scene:'24 fps · out-time 7 frames before shot change', choices:['Leave a 7-frame gap before the shot change.','Extend to two frames before the shot change.','Carry it 7 frames into the next shot.'], answer:1, why:'An out-time within half a second of a shot change can be extended to two frames before the shot change, as long as it does not linger awkwardly.', source:'timing'},
+  {id:'cross-in', topic:'Shot changes', question:'Audio begins 9 frames before a shot change and continues into the next shot. Which in-time choices fit the guide?', scene:'24 fps · dialogue starts 9 frames before shot change', choices:['Start 9 frames before the shot change and keep that in-time.','Start at least 12 frames before the shot change, or start on the first frame of the new shot.','Start 5 frames after the shot change.'], answer:1, why:'For dialogue crossing a shot change, an in-time before it needs at least half a second of lead. Bring it forward to 12 frames before, or move it to the new shot.', source:'timing'},
+  {id:'cross-out', topic:'Shot changes', question:'Dialogue crosses a shot change. If reading speed allows, where can the subtitle end?', scene:'24 fps · spoken line continues across a shot change', choices:['Five frames after the shot change.','Two frames before the shot change, or at least 12 frames after it.','Only on the shot change itself.'], answer:1, why:'Avoid a brief subtitle tail just after the shot change. For dialogue crossing it, aim for two frames before or at least half a second after.', source:'timing'},
+  {id:'scene-cross', topic:'Shot changes', question:'A subtitle runs into a completely new scene, but its dialogue belongs only to the previous scene. What is the call?', scene:'End of scene A → unrelated scene B', choices:['Let it cross because shot changes are always allowed.','Keep it in scene A; scene changes generally must not be crossed.','Move all the text to scene B.'], answer:1, why:'A scene change is stricter than an ordinary shot change. The stated exception is audio that begins before the change and continues in the next scene.', source:'timing'},
+  {id:'gap-seven', topic:'Gaps & rhythm', question:'Two consecutive subtitles have a 7-frame gap in a 24 fps file. What should you aim for?', scene:'Event A ends · 7 empty frames · event B begins', choices:['Close it to a 2-frame gap, if timing permits.','Leave 7 frames because any gap is fine.','Make the events overlap.'], answer:0, why:'At 24 fps, gaps of 3–11 frames should normally be closed to two frames by extending the earlier event, while respecting shot changes and audio.', source:'timing'},
+  {id:'gap-twelve', topic:'Gaps & rhythm', question:'Two subtitles have a 12-frame gap at 24 fps. Is that gap in the preferred pattern?', scene:'12 frames = half a second at 24 fps', choices:['Yes. A half-second gap is allowed.','No. Every gap must be exactly two frames.','No. Make them overlap by two frames.'], answer:0, why:'The preferred gaps are two frames or at least half a second. Twelve frames meets the half-second threshold at 24 fps.', source:'timing'},
+  {id:'gap-extended', topic:'Gaps & rhythm', question:'The first subtitle already stays half a second after audio. Extending it more would close a short gap. What should you consider?', scene:'Event A already extended after audio · small gap to B', choices:['Stretch A as far as needed regardless of lingering.','Try re-segmenting or merging, or leave a half-second gap if possible.','Delete B without checking the dialogue.'], answer:1, why:'Avoid extending a subtitle further when it already lingers half a second after audio. Re-segmentation or a merge may make the rhythm cleaner.', source:'timing'},
+  {id:'borrow', topic:'Gaps & rhythm', question:'One subtitle event feels rushed, while its neighbor has plenty of time. Which edit can help?', scene:'Event A: dense and fast · event B: short and spacious', choices:['Merge or re-segment the neighbors to borrow time, then check sync and formatting.','Ignore the pace if both events meet the minimum.','Move the rushed text before a visible punchline.'], answer:0, why:'Borrowing time can even out reading speed. Watch the merged event for speaker formatting, shot timing, and spoilers.', source:'timing'},
+  {id:'fps-twentyfour', topic:'Frames', question:'At 24 fps, how many frames are half a second, and what is the minimum gap?', scene:'Content: 24 fps', choices:['12 frames; the subtitle gap minimum is 2 frames.','15 frames; the gap minimum is 3 frames.','24 frames; the gap minimum is 12 frames.'], answer:0, why:'Half a second is 12 frames at 24 fps. The minimum gap between events is two frames.', source:'timing'},
+  {id:'position-bottom', topic:'Position & text', question:'A location card fills the bottom of the screen while dialogue is spoken. Where should the subtitle go?', scene:'On-screen text along the bottom · top area clear', choices:['Center-justified at the top.','Over the location card at the bottom.','Left-justified in the middle.'], answer:0, why:'Use top or bottom, centered. Moving to the top avoids covering important bottom text.', source:'general'},
+  {id:'position-both', topic:'Position & text', question:'A headline fills the top of the screen, and a speaker label sits at the bottom. A subtitle would overlap text in either position. How do you choose?', scene:'Top: long headline · bottom: short speaker label · dialogue continues', choices:['Always top, regardless of readability.','Use the top or bottom position where the subtitle is easier to read.','Place the subtitle in the middle.'], answer:1, why:'When both positions have on-screen text, choose the top or bottom area that makes the subtitle easier to read. Check how much text each position would cover.', source:'general'},
+  {id:'one-line', topic:'Position & text', question:'A subtitle fits comfortably on one line. How many lines should you use?', scene:'"Babalik ako bukas." · comfortably within the line limit', choices:['One line.','Two lines so the screen looks balanced.','Three lines to slow down reading.'], answer:0, why:'Usually keep a subtitle on one line unless it exceeds the line limit. The general maximum is two lines.', source:'general'},
+  {id:'line-break', topic:'Position & text', question:'Which break keeps the words together most naturally?', scene:'Text to split: "Hahanapin ko ang lumang bahay bago dumilim."', choices:['Hahanapin ko ang / lumang bahay bago dumilim.','Hahanapin ko ang lumang bahay / bago dumilim.','Hahanapin ko ang lumang / bahay bago dumilim.'], answer:1, why:'Break before the conjunction "bago" here and keep "ang lumang bahay" together. Avoid splitting an article or adjective from its noun.', source:'general'},
+  {id:'two-lines', topic:'Position & text', question:'A dialogue subtitle occupies three lines, even though each line fits its limit. What still needs fixing?', scene:'Three visible subtitle lines · no speaker change', choices:['Nothing; only the per-line character count matters.','Reduce or re-segment to a maximum of two lines.','Move the third line to the top of the screen at the same time.'], answer:1, why:'The general limit is two lines per subtitle event. Staying within the per-line limit does not permit a third line.', source:'general'},
+  {id:'fn-fade', topic:'On-screen text', question:'On-screen text fades in and out. Where do you initially time its forced narrative?', scene:'On-screen text fades in → holds → fades out', choices:['Halfway through each fade, then watch it back for sync.','Only after the on-screen text has completely appeared, ending after it vanishes.','To the spoken dialogue rather than the on-screen text.'], answer:0, why:'For a fading on-screen text FN, aim around the midpoint of the fades and check the result on playback.', source:'timing'},
+  {id:'fn-cut', topic:'On-screen text', question:'A sign stays visible for an entire shot and disappears at the shot change. Where should its forced narrative end?', scene:'Sign present through shot · next shot has no sign', choices:['Two frames before the shot change.','Half a second into the next shot.','When unrelated dialogue finishes.'], answer:0, why:'For on-screen text lasting the whole shot, set the FN out-time two frames before the shot change, within duration limits.', source:'timing'},
+  {id:'spoiler', topic:'Audio & sync', question:"A joke's punchline begins in the next shot, after a visible reaction. What must your early in-time avoid?", scene:'Setup → reaction shot → punchline', choices:['Revealing the punchline before viewers reach the moment.','A two-frame gap.','Using a one-line subtitle.'], answer:0, why:'Do not show a punchline or major plot point early when the reaction matters. Sync to the reveal and watch the sequence back.', source:'timing'}
+];
+
+const ABSTRACT_FRAME_IDS = new Set(['min-19','audio-in','shot-in','shot-out','cross-in','cross-out','gap-seven']);
+const RULE_QUESTIONS = QUESTIONS.filter(q => !ABSTRACT_FRAME_IDS.has(q.id));
+const $ = id => document.getElementById(id);
+const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+const saved = (() => { try { const data = JSON.parse(localStorage.getItem('subtitle-timing-lab-v1') || '{}'); return data && typeof data === 'object' ? data : {}; } catch { return {}; } })();
+const misses = new Map(Object.entries(saved.misses || {}).filter(([id, choice]) => RULE_QUESTIONS.some(q => q.id === id) && Number.isInteger(choice)));
+let queue = [], index = 0, correct = 0, answered = false, sessionMode = 'all', currentView = 'timeline', previousView = 'practice', activeMode='timeline', activeGuide='timing';
+
+function persist() { try { localStorage.setItem('subtitle-timing-lab-v1', JSON.stringify({misses:Object.fromEntries(misses)})); } catch {} updateMissedCount(); }
+function guideMisses() { return RULE_QUESTIONS.filter(q=>q.source===activeGuide&&misses.has(q.id)); }
+function updateMissedCount() { const count=activeMode==='timeline' ? (window.timelineTrainer?.missCount() || 0) : guideMisses().length; $('missed-count').textContent = count; $('mistakes-button').disabled = count === 0; $('retry-button').disabled = guideMisses().length === 0; $('review-retry-button').disabled = guideMisses().length === 0; }
+function setActiveMode(mode) { activeMode=mode; document.body.dataset.mode=mode; $('timeline-tab').setAttribute('aria-selected',String(mode==='timeline')); $('rules-tab').setAttribute('aria-selected',String(mode==='rules')); updateMissedCount(); }
+function show(view) { currentView=view; for (const name of ['timeline','practice','result','review']) $(name).hidden = view !== name; }
+function topicName() { return $('topic').value === 'all' ? 'All topics' : $('topic').value; }
+function fillTopics() {
+  $('topic').replaceChildren(new Option('All topics','all'));
+  for (const topic of [...new Set(RULE_QUESTIONS.filter(q=>q.source===activeGuide).map(q=>q.topic))]) $('topic').add(new Option(topic,topic));
+}
+function selectGuide(guide) {
+  if(activeGuide===guide)return;
+  activeGuide=guide;document.body.dataset.guide=guide;
+  $('timing-guide-tab').setAttribute('aria-selected',String(guide==='timing'));
+  $('general-guide-tab').setAttribute('aria-selected',String(guide==='general'));
+  $('timing-modes').hidden=guide==='general';
+  $('guide-heading').textContent=guide==='timing'?'Time the subtitle.':'Shape the subtitle.';
+  $('guide-intro').textContent=guide==='timing'?'24 fps practice. See the audio and the edit, then make your timing call.':'Practice duration, line treatment, and positioning from the general requirements.';
+  fillTopics();
+  if(guide==='timing')window.timelineTrainer.begin();else begin('all');
+}
+function begin(mode = 'all') {
+  setActiveMode('rules');
+  sessionMode = mode;
+  const selected = RULE_QUESTIONS.filter(q => q.source===activeGuide && (mode === 'retry' ? misses.has(q.id) : $('topic').value === 'all' || q.topic === $('topic').value));
+  queue = selected.slice();
+  for (let i=queue.length-1;i>0;i--) { const j=Math.floor(Math.random()*(i+1)); [queue[i],queue[j]]=[queue[j],queue[i]]; }
+  index = 0; correct = 0; answered = false;
+  if (!queue.length) { show('result'); $('result-title').textContent='Nothing to retry yet.'; $('result-copy').textContent='Answer some scenarios first. Missed concepts will collect here.'; $('retry-button').hidden=true; return; }
+  $('retry-button').hidden=false; show('practice'); render();
+}
+function render() {
+  const q = queue[index]; answered = false;
+  $('mode-label').textContent = sessionMode === 'retry' ? 'RETRY MISSED CONCEPTS' : `${activeGuide==='timing'?'TIMING GUIDELINES':'GENERAL REQUIREMENTS'} · ${topicName().toUpperCase()}`;
+  $('progress-label').textContent = `${index+1} of ${queue.length}`;
+  const percent = Math.round(index / queue.length * 100);
+  $('progress-fill').style.width = `${percent}%`;
+  $('progress-track').setAttribute('aria-valuenow', String(percent));
+  $('category').textContent=q.topic;
+  $('question').textContent=q.question;
+  $('scene').textContent=q.scene;
+  $('answers').replaceChildren(...q.choices.map((choice, i) => {
+    const button=document.createElement('button'); button.type='button'; button.className='option';
+    button.innerHTML=`<span class="option-key">${i+1}</span><span>${escapeHTML(choice)}</span>`;
+    button.addEventListener('click',()=>choose(i)); return button;
+  }));
+  $('feedback').hidden=true; $('next-button').hidden=true;
+  $('next-button').textContent = index+1===queue.length ? 'See results' : 'Next question';
+}
+function choose(choice) {
+  if (answered) return;
+  answered=true;
+  const q=queue[index], success=choice===q.answer;
+  if (success) { correct++; misses.delete(q.id); } else misses.set(q.id,choice);
+  persist();
+  [...$('answers').children].forEach((button,i)=>{ button.disabled=true; if(i===q.answer) button.classList.add('is-correct'); else if(i===choice) button.classList.add('is-wrong'); });
+  const source=SOURCES[q.source], feedback=$('feedback');
+  feedback.className=`feedback ${success?'correct':'incorrect'}`;
+  feedback.innerHTML=`<strong>${success?'You got it.':'Not quite.'}</strong><p>${escapeHTML(q.why)}</p><a href="${source.url}" target="_blank" rel="noopener noreferrer">Check ${escapeHTML(source.label)}</a>`;
+  feedback.hidden=false; $('next-button').hidden=false;
+}
+function advance() { if (!answered) return; index++; if(index < queue.length) { render(); $('question').focus(); } else finish(); }
+function finish() {
+  show('result'); $('progress-fill').style.width='100%'; $('progress-track').setAttribute('aria-valuenow','100');
+  $('result-title').textContent=`${correct} of ${queue.length} right`;
+  const missed=guideMisses().length;
+  $('result-copy').textContent=missed ? `${missed} concept${missed===1?'':'s'} to review in this guide. Read the explanations, then retry those questions.` : 'All clear. You can practice another topic or run this guide again.';
+  $('retry-button').hidden = missed===0; $('result-title').focus();
+}
+function review() {
+  previousView=currentView;
+  const list=$('review-list'); list.replaceChildren();
+  for (const [id, wrong] of misses) {
+    const q=RULE_QUESTIONS.find(item=>item.id===id); if(!q) continue;
+    if(q.source!==activeGuide)continue;
+    const card=document.createElement('article'); card.className='review-card';
+    const source=SOURCES[q.source];
+    card.innerHTML=`<span class="category">${escapeHTML(q.topic)}</span><h3>${escapeHTML(q.question)}</h3><p class="muted">Your answer: ${escapeHTML(q.choices[wrong] || 'Unknown')}</p><p><strong>Best answer:</strong> ${escapeHTML(q.choices[q.answer])}</p><p>${escapeHTML(q.why)}</p><a href="${source.url}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.label)}</a>`;
+    list.append(card);
+  }
+  show('review'); $('review').querySelector('h2').focus();
+}
+
+$('timing-guide-tab').addEventListener('click',()=>selectGuide('timing'));
+$('general-guide-tab').addEventListener('click',()=>selectGuide('general'));
+fillTopics();
+$('topic').addEventListener('change',()=>begin('all'));
+$('mistakes-button').addEventListener('click',()=>activeMode==='timeline'?window.timelineTrainer.review():review());
+$('back-button').addEventListener('click',()=>show(previousView));
+$('next-button').addEventListener('click',advance);
+$('retry-button').addEventListener('click',()=>begin('retry'));
+$('review-retry-button').addEventListener('click',()=>begin('retry'));
+$('restart-button').addEventListener('click',()=>{ $('topic').value='all'; begin('all'); });
+document.addEventListener('keydown', event=>{
+  if (activeMode!=='rules' || currentView!=='practice' || ['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName) || event.altKey || event.ctrlKey || event.metaKey) return;
+  if (!answered && /^[1-4]$/.test(event.key)) { const option=$('answers').children[Number(event.key)-1]; if(option) { event.preventDefault(); option.click(); } }
+  else if(answered && event.key==='Enter' && document.activeElement.tagName!=='A') { event.preventDefault(); advance(); }
+});
+$('question').tabIndex=-1; $('result-title').tabIndex=-1; $('review').querySelector('h2').tabIndex=-1;
+updateMissedCount(); begin();
+
+</script>
+<script>
+const TL_FRAMES = 96;
+const TL_SOURCE = 'https://studiopartner.netflix.net/studio/subtitle-timing-guidelines';
+const DRILLS = [
+  {id:'audio-start',category:'Timing to audio',question:'Time this isolated subtitle to the audio.',instruction:'Set both edges using the waveform, then leave a natural reading tail.',audio:[[30,57]],cuts:[],initial:[24,68],ideal:[30,69],check:(s,e)=>audioInOk(s,30)&&e>=69&&e<=69&&e-s>=20,diagnose:audioStartDiagnosis,why:'The in-time should match the first audio frame or fall within the accepted 1–2-frame lead to keep the subtitle in sync. When there is no subtitle immediately after the event, extend the out-time by half a second (12 frames) after the audio ends to give viewers additional reading time.'},
+  {id:'shot-start',category:'Shot change',question:'The audio begins just after the shot change.',instruction:'Time both edges to the shot change and the audio.',audio:[[32,60]],cuts:[24],initial:[32,70],ideal:[24,72],check:(s,e)=>s===24&&e===72&&e-s>=20,diagnose:shotStartDiagnosis,why:'When dialogue begins within half a second (12 frames) of a shot change, set the in-time to the first frame of the shot change instead of the first frame of audio.'},
+  {id:'shot-end',category:'Shot change',question:'Tidy the subtitle before the shot change.',instruction:'The audio has ended. Fix the out-time.',audio:[[30,62]],cuts:[72],initial:[30,65],ideal:[30,70],check:(s,e)=>audioInOk(s,30)&&e===70&&e-s>=20,diagnose:shotEndDiagnosis,why:'If the dialogue ends before a shot change, set the out-time two frames before the shot change.'},
+  {id:'minimum',waveSeed:4,category:'Minimum duration',question:'Time this isolated subtitle.',instruction:'Use the waveform and duration to set both edges.',audio:[[18,26]],cuts:[],initial:[18,33],ideal:[18,38],check:(s,e)=>audioInOk(s,30)&&e===69&&e-s>=20,diagnose:minimumDiagnosis,why:'The subtitle must last at least 20 frames. That minimum is mainly for one- or two-word subtitles; longer text should stay on screen longer when the audio and edit allow it.'},
+  {id:'close-gap',waveSeed:9,category:'Gap between events',question:'Close the awkward little gap.',instruction:'There are 7 frames between subtitle A and subtitle B. Extend A to leave exactly a 2-frame gap.',audio:[[12,35],[42,70]],cuts:[],initial:[12,35],second:[42,82],ideal:[12,40],check:(s,e)=>audioInOk(s,26)&&55-e===2&&e-s>=20,diagnose:closeGapDiagnosis,why:'Start A on its first frame of audio at 00:00:16:02 or one or two frames before it. Close the seven-frame gap to two frames: B begins at 00:00:17:07, so A ends at 00:00:17:05.'},
+  {id:'cross-in',waveSeed:15,category:'Dialogue across a shot change',question:'Audio begins just before the shot change.',instruction:'Set both edges: start 12 frames before the shot change (or on the new shot), then give the dialogue about half a second after it ends.',audio:[[34,66]],cuts:[40],initial:[34,73],ideal:[28,78],check:(s,e)=>(s===48||s===60)&&e>=89,diagnose:crossInDiagnosis,why:'When dialogue starts shortly before a shot change, either begin half a second before the cut or begin on the first frame of the new shot. This keeps the subtitle readable and aligned with the edit. When there is no subtitle immediately after the event, extend the out-time by half a second (12 frames) after the audio ends to give viewers additional reading time.'},
+  {id:'cross-out',waveSeed:23,category:'Dialogue across a shot change',question:'The current out-time hangs just past the shot change.',instruction:'The audio crosses the shot change. Move the right edge to one of the two clean timing positions.',audio:[[16,52]],cuts:[48],initial:[16,53],ideal:[16,64],check:(s,e)=>audioInOk(s,44)&&(e===70||e>=84)&&e-s>=20,diagnose:crossOutDiagnosis,why:'When dialogue continues across a shot change, end either two frames before the cut or at least half a second after it, if reading speed allows. These choices keep the subtitle cleanly timed to both the audio and the edit.'}
+];
+
+
+// Revised drills derive grading and explanations from their displayed audio and cuts.
+const REVISED_DRILLS = new Set(['minimum','close-gap','cross-in','cross-out']);
+for(const d of DRILLS.filter(d=>REVISED_DRILLS.has(d.id))){
+  d.check=(start,end)=>{const r=revisedAssessment(d,start,end);return r.inOk&&r.outOk&&r.durationOk};
+  d.diagnose=(start,end)=>{const r=revisedAssessment(d,start,end);return r.inText+' '+r.outText+' '+r.durationText};
+  if(d.id==='minimum')d.why='The subtitle must last at least 20 frames. This short audio lasts 8 frames; extending the out-time by 12 frames gives the subtitle a total duration of 20 frames when it starts on the first frame of audio.';
+  if(d.id==='close-gap')d.why=`Start subtitle A on its first frame of audio at ${tc(d.audio[0][0])}, or within the accepted 1–2-frame lead. Subtitle B begins at ${tc(d.second[0])}; set the out-time of A to ${tc(d.second[0]-2)} to leave a two-frame gap.`;
+  if(d.id==='cross-in'){
+    d.instruction='Start 12 frames before the shot change or on the shot change, then extend the out-time by 12 frames after the audio ends.';
+    d.why=`When dialogue begins shortly before a shot change, set the in-time to ${tc(d.cuts[0]-12)}, 12 frames before the shot change, or ${tc(d.cuts[0])}, on the shot change. Extend the out-time to ${tc(d.audio[0][1]+12)}, 12 frames after the audio ends.`;
+  }
+  if(d.id==='cross-out')d.why=`When dialogue continues across a shot change, end two frames before the shot change at ${tc(d.cuts[0]-2)}, or at least 12 frames after the shot change. For this drill, the later out-time can be ${tc(d.cuts[0]+12)}–${tc(d.audio[0][1]+12)}; this keeps the extension after audio within 12 frames.`;
+}
+function revisedAssessment(d,start,end){
+  const [audioStart,audioEnd]=d.audio[0],cut=d.cuts[0],lead=audioStart-start;
+  const duration=end-start;
+  let inOk=audioInOk(start,audioStart),inText,outOk,outText;
+  inText=start===audioStart?`The subtitle starts at ${tc(start)}, on the first frame of audio.`:inOk?`Setting the in-time to ${tc(start)} places the subtitle within the accepted 1–2-frame lead before the first frame of audio at ${tc(audioStart)}.`:`The subtitle starts at ${tc(start)}, which is ${Math.abs(lead)} frames ${lead>0?'before':'after'} the first frame of audio. Set the in-time to ${tc(audioStart-2)}–${tc(audioStart)}.`;
+  if(d.id==='cross-in'){
+    inOk=start===cut-12||start===cut;
+    inText=inOk?`The subtitle starts at ${tc(start)}, ${start===cut?'aligning with the shot change':'12 frames before the shot change'}.`:`The subtitle starts at ${tc(start)}. Set the in-time to ${tc(cut-12)}, 12 frames before the shot change, or ${tc(cut)}, on the shot change.`;
+  }
+  const target=audioEnd+12,offset=end-audioEnd;
+  outOk=end===target;
+  outText=offset<0?`The subtitle ends at ${tc(end)}, ${-offset} frames before the audio ends at ${tc(audioEnd)}. Extend the out-time to ${tc(target)}.`:offset<12?`The subtitle remains on screen until ${tc(end)}, which is only ${offset} frames after the audio ends. Extend the out-time to ${tc(target)} to meet the recommended 12-frame extension.`:offset>12?`The subtitle remains on screen until ${tc(end)}, which is ${offset} frames after the audio ends, exceeding the recommended 12-frame extension by ${offset-12} frames. Set the out-time to ${tc(target)}.`:`Setting the out-time to ${tc(end)} keeps the subtitle on screen for 12 frames after the audio ends at ${tc(audioEnd)}.`;
+  if(d.id==='close-gap'){
+    const gap=d.second[0]-end;outOk=gap===2;
+    outText=outOk?`The subtitle ends at ${tc(end)}, leaving a two-frame gap before subtitle B at ${tc(d.second[0])}.`:`The subtitle ends at ${tc(end)}, ${gap<0?'overlapping subtitle B by '+(-gap)+' frames':'leaving a '+gap+'-frame gap before subtitle B'}. Set the out-time to ${tc(d.second[0]-2)} to leave a two-frame gap.`;
+  }
+  if(d.id==='cross-out'){
+    outOk=end===cut-2||(end>=cut+12&&end<=target);
+    outText=outOk?(end===cut-2?`The subtitle ends at ${tc(end)}, two frames before the shot change.`:`The subtitle ends at ${tc(end)}, ${end-cut} frames after the shot change and ${offset} frames after the audio ends at ${tc(audioEnd)}.`):`The subtitle ends at ${tc(end)}. Set the out-time to ${tc(cut-2)}, two frames before the shot change, or ${tc(cut+12)}–${tc(target)}, at least 12 frames after the shot change without exceeding 12 frames after the audio ends.`;
+  }
+  return {inOk,inText,outOk,outText,durationOk:duration>=20,durationText:`${duration} frames (minimum: 20 frames).`};
+}
+
+function audioInOk(start,firstSound){return start>=firstSound-2&&start<=firstSound}
+
+function audioStartDiagnosis(start,end){
+  const difference=start-30;
+  const placement=difference===0?'on the first frame of audio':`${Math.abs(difference)} frame${Math.abs(difference)===1?'':'s'} ${difference<0?'before':'after'} the first frame of audio`;
+const outMessage=end<57?`Your out-time ${tc(end)} cuts off the audio.`:end<69?`The subtitle remains on screen until ${tc(end)}, which is only ${end-57} frames after the audio ends. Extend the out-time to 00:00:17:21 to meet the recommended 12-frame extension.`:end>69?`Your out-time ${tc(end)} is ${end-57} frames after audio ends; keep the extension to 12 frames or fewer.`:`Setting the out-time to ${tc(end)} keeps the subtitle on screen for 12 frames after the audio ends at ${tc(57)}.`;
+  return `Your in-time ${tc(start)} is ${placement}. ${audioInOk(start,30)?'That is on or up to two frames before the first frame of audio.':'Start on the first frame of audio or one or two frames before it.'} ${outMessage} Duration: ${end-start} frames${end-start<20?' (below the 20-frame minimum).':'.'}`;
+}
+
+function timingFeedbackHeading(d,start,end){
+  if(REVISED_DRILLS.has(d.id)){const r=revisedAssessment(d,start,end);return !r.inOk&&!r.outOk?'Check both edges.':!r.inOk?'Check the in-time.':!r.outOk?'Check the out-time.':!r.durationOk?'Check the duration.':'Nice timing.';}
+  if(d.id==='shot-start'){
+    const inOk=start===24,outOk=end===72;
+    return !inOk&&!outOk?'Check both edges.':inOk?'Check the out-time.':'Check the in-time.';
+  }
+  if(d.id==='audio-start'){
+    const inOk=audioInOk(start,30),outOk=end>=69&&end<=75;
+    return !inOk&&!outOk?'Check both edges.':inOk?'Check the out-time.':'Check the in-time.';
+  }
+  if(d.id==='cross-in'){
+    const inOk=start===48||start===60,outOk=end>=89;
+    return !inOk&&!outOk?'Check both edges.':inOk?'Check the out-time.':'Check the in-time.';
+  }
+  if(d.id==='cross-out'){
+    const inOk=audioInOk(start,44),outOk=end===70||end>=84;
+    return !inOk&&!outOk?'Check both edges.':inOk?'Check the out-time.':'Check the in-time.';
+  }
+  if(['shot-end','minimum','close-gap'].includes(d.id)){
+    const firstSound=d.id==='close-gap'?26:30;
+    const inOk=audioInOk(start,firstSound);
+    const outOk=d.id==='shot-end'?end===70:d.id==='minimum'?end===69:end===53;
+    return !inOk&&!outOk?'Check both edges.':inOk?'Check the out-time.':'Check the in-time.';
+  }
+  if(end-start<20&&['shot-start','shot-end','close-gap','cross-out'].includes(d.id))return 'Check the duration.';
+  return d.id==='shot-start'?'Check the in-time.':'Check the out-time.';
+}
+
+function crossInDiagnosis(start,end){
+  const inMessage=start===48?`Your in-time ${tc(start)} is exactly 12 frames before the shot change. That part is right.`:start===60?`Your in-time ${tc(start)} is on the new shot. That part is right.`:`Your in-time ${tc(start)} is ${Math.abs(60-start)} frames ${start<60?'before':'after'} the shot change; use 00:00:17:00 (12 frames before) or 00:00:17:12 (on the shot change).`;
+  const outMessage=end>=89?`Your out-time ${tc(end)} is ${end-77} frames after audio ends and ${end-60} frames after the shot change. That part is right.`:end>=77?`Your out-time ${tc(end)} is only ${end-77} frames after audio ends. Extend it to at least 00:00:18:17 for a half-second reading tail.`:`Your out-time ${tc(end)} comes before the audio ends at 00:00:18:05. Extend it to at least 00:00:18:17.`;
+  return `${inMessage} ${outMessage}`;
+}
+
+function crossOutDiagnosis(start,end){
+  const inMessage=audioInOk(start,44)?`Your in-time ${tc(start)} is on or up to two frames before the first frame of audio.`:`Your in-time ${tc(start)} is ${Math.abs(start-44)} frames ${start<44?'before':'after'} the first frame of audio; use 00:00:16:18 through 00:00:16:20.`;
+  const outMessage=end===70||end>=84?`Your out-time ${tc(end)} fits a shot-change timing position.`:`Your out-time ${tc(end)} should be 00:00:17:22 (two frames before the shot change) or 00:00:18:12.`;
+  return `${inMessage} ${outMessage}`;
+}
+
+function shotStartDiagnosis(start,end){
+  const inMessage=start===24?`Your in-time ${tc(start)} starts on the shot change.`:`The subtitle starts at ${tc(start)}, ${Math.abs(start-24)} frames ${start<24?'before':'after'} the shot change. Adjust the in-time to 00:00:16:00 to align with the shot change.`;
+  const outMessage=end<60?`Your out-time ${tc(end)} cuts off the audio.`:end<72?`The subtitle remains on screen until ${tc(end)}, which is only ${end-60} frames after the audio ends. Extend the out-time to 00:00:18:00 to meet the recommended 12-frame extension.`:end>78?`The subtitle remains on screen until ${tc(end)}, which is ${end-60} frames after the audio ends, exceeding the recommended 12-frame extension by ${end-72} frames.`:`Setting the out-time to ${tc(end)} keeps the subtitle on screen for ${end-60} frames after the audio ends at ${tc(60)}.`;
+  return `${inMessage} ${outMessage}`;
+}
+
+function shotEndDiagnosis(start,end){
+  const inMessage=audioInOk(start,30)?`Your in-time ${tc(start)} is on or up to two frames before the first frame of audio.`:`Your in-time ${tc(start)} is ${Math.abs(start-30)} frames ${start<30?'before':'after'} the first frame of audio; use 00:00:16:04 through 00:00:16:06.`;
+  const outMessage=end===70?`Your out-time ${tc(end)} is two frames before the shot change.`:`The subtitle ends too early at ${tc(end)}. Set the out-time to 00:00:17:22, two frames before the shot change.`;
+  return `${inMessage} ${outMessage}`;
+}
+
+function minimumDiagnosis(start,end){
+  const inMessage=audioInOk(start,30)?`Your in-time ${tc(start)} is on or up to two frames before the first frame of audio.`:`Your in-time ${tc(start)} is ${Math.abs(start-30)} frames ${start<30?'before':'after'} the first frame of audio; use 00:00:16:04 through 00:00:16:06.`;
+  const outMessage=end<57?`Your out-time ${tc(end)} cuts off audio.`:end<69?`The subtitle remains on screen until ${tc(end)}, which is only ${end-57} frames after the audio ends. Extend the out-time to 00:00:17:21 to meet the recommended 12-frame extension.`:end>69?`The subtitle remains on screen until ${tc(end)}, which is ${end-57} frames after the audio ends, exceeding the recommended 12-frame extension by ${end-69} frames.`:`Setting the out-time to ${tc(end)} keeps the subtitle on screen for 12 frames after the audio ends at 00:00:17:09.`;
+  return `${inMessage} ${outMessage} Duration: ${end-start} frames${end-start<20?' (below the 20-frame minimum).':'.'}`;
+}
+
+function closeGapDiagnosis(start,end){
+  const inMessage=audioInOk(start,26)?`Your in-time ${tc(start)} is on or up to two frames before A's first frame of audio.`:`Your in-time ${tc(start)} is ${Math.abs(start-26)} frames ${start<26?'before':'after'} A's first frame of audio; use 00:00:16:00 through 00:00:16:02.`;
+  const gap=55-end;
+  const outMessage=gap===2?`Your out-time ${tc(end)} leaves a two-frame gap to B.`:gap<0?`Your out-time ${tc(end)} overlaps B by ${-gap} frames; leave a two-frame gap.`:`Your out-time ${tc(end)} leaves a ${gap}-frame gap to B; make it two frames.`;
+  return `${inMessage} ${outMessage}`;
+}
+
+function tlEdgeAssessment(d,start,end){
+  if(REVISED_DRILLS.has(d.id))return revisedAssessment(d,start,end);
+  const firstSound=d.audio[0][0],lastSound=d.audio[0][1],duration=end-start;
+  let inOk,inText,outOk,outText;
+  if(d.id==='shot-start'){
+    inOk=start===24;
+    inText=inOk?`The subtitle starts at ${tc(start)}, aligning with the shot change.`:`The subtitle starts at ${tc(start)}, ${Math.abs(start-24)} frames ${start<24?'before':'after'} the shot change. Adjust the in-time to ${tc(24)} to align with the shot change.`;
+  }else if(d.id==='cross-in'){
+    inOk=start===48||start===60;
+    inText=inOk?`${tc(start)} is a valid shot-change placement.`:`The subtitle starts at ${tc(start)}, ${Math.abs(60-start)} frames ${start<60?'before':'after'} the shot change. The in-time should be ${tc(48)} or ${tc(60)}.`;
+  }else{
+    inOk=audioInOk(start,firstSound);
+    const distance=Math.abs(start-firstSound);
+    inText=inOk?(distance===0?`The subtitle starts at ${tc(start)}, on the first frame of audio.`:`Setting the in-time to ${tc(start)} places the subtitle within the accepted 1–2-frame lead before the first frame of audio at ${tc(firstSound)}.`):start<firstSound?`The subtitle starts at ${tc(start)}, which is ${distance} frames before the first frame of audio, exceeding the accepted 1–2-frame lead. The in-time should be ${tc(firstSound-2)}–${tc(firstSound)}.`:`The subtitle starts at ${tc(start)}, which is ${distance} frames after the first frame of audio. The in-time should be ${tc(firstSound-2)}–${tc(firstSound)}.`;
+  }
+  if(['audio-start','shot-start','minimum'].includes(d.id)){
+    const min=lastSound+12,max=d.id==='audio-start'||d.id==='minimum'||d.id==='shot-start'?min:lastSound+18;
+    outOk=end>=min&&end<=max;
+    outText=end<lastSound?`${tc(end)} cuts off the audio at ${tc(lastSound)}.`:end<min?`The subtitle remains on screen until ${tc(end)}, which is only ${end-lastSound} frames after the audio ends. Extend the out-time to ${tc(min)} to meet the recommended 12-frame extension.`:end>max?`The subtitle remains on screen until ${tc(end)}, which is ${end-lastSound} frames after the audio ends, exceeding the recommended 12-frame extension by ${end-min} frames.`:`Setting the out-time to ${tc(end)} keeps the subtitle on screen for ${end-lastSound} frames after the audio ends at ${tc(lastSound)}.`;
+  }else if(d.id==='shot-end'){
+    outOk=end===70;
+    outText=outOk?`${tc(end)} is two frames before the shot change.`:`The subtitle ends too early at ${tc(end)}. Set the out-time to ${tc(70)}, two frames before the shot change.`;
+  }else if(d.id==='close-gap'){
+    const gap=d.second[0]-end;
+    outOk=gap===2;
+    outText=outOk?`${tc(end)} leaves a two-frame gap to subtitle B.`:gap<0?`${tc(end)} overlaps subtitle B by ${-gap} frames. End A at ${tc(53)}.`:`${tc(end)} leaves a ${gap}-frame gap to B. End A at ${tc(53)}.`;
+  }else if(d.id==='cross-in'){
+    outOk=end>=89;
+    outText=end<lastSound?`${tc(end)} cuts off audio at ${tc(lastSound)}.`:outOk?`Setting the out-time to ${tc(end)} keeps the subtitle on screen for ${end-lastSound} frames after the audio ends at ${tc(lastSound)}.`:`${tc(end)} leaves only ${end-lastSound} frames after audio. Extend to ${tc(89)}.`;
+  }else{
+    outOk=end===70||end>=84;
+    outText=end===70?`${tc(end)} is two frames before the shot change.`:end>=84?`${tc(end)} is ${end-72} frames after the shot change.`:`${tc(end)} is too close to the shot change. The out-time should be ${tc(70)} or ${tc(84)}.`;
+  }
+  return {inOk,inText,outOk,outText,durationOk:duration>=20,durationText:`${duration} frames (minimum: 20 frames).`};
+}
+
+const tl = id => document.getElementById(id);
+const timelineSaved = (()=>{try{return JSON.parse(localStorage.getItem('subtitle-timing-drills-v1')||'{}')||{}}catch{return {}}})();
+const timelineMisses = new Map(Object.entries(timelineSaved.misses||{}).filter(([id,v])=>DRILLS.some(d=>d.id===id)&&Array.isArray(v)&&v.length===2));
+const oldToTimeline = {'min-19':'minimum','audio-in':'audio-start','shot-in':'shot-start','shot-out':'shot-end','cross-in':'cross-in','cross-out':'cross-out','gap-seven':'close-gap'};
+for(const [oldId,newId] of Object.entries(oldToTimeline))if(Object.hasOwn(saved.misses||{},oldId)&&!timelineMisses.has(newId))timelineMisses.set(newId,DRILLS.find(d=>d.id===newId).initial.slice());
+let tlQueue=[],tlIndex=0,tlCorrect=0,tlAnswered=false,tlStart=0,tlEnd=0,tlView='question',tlPrevious='question',tlPointer=null;
+
+function tlPersist(){try{localStorage.setItem('subtitle-timing-drills-v1',JSON.stringify({misses:Object.fromEntries(timelineMisses)}))}catch{} updateMissedCount()}
+function tc(frame){const sec=15+Math.floor(frame/24);return `00:00:${String(sec).padStart(2,'0')}:${String(frame%24).padStart(2,'0')}`}
+function frameRange(start,end){return start===end?tc(start):`${tc(start)}–${tc(end)}`}
+function tlShow(view){tlView=view;for(const name of ['question','result','review'])tl(`timeline-${name}-view`).hidden=view!==name}
+function timelineBegin(retry=false){
+  setActiveMode('timeline'); show('timeline'); tlQueue=retry?DRILLS.filter(d=>timelineMisses.has(d.id)):DRILLS.slice();tlIndex=0;tlCorrect=0;
+  if(!tlQueue.length){tlShow('result');tl('timeline-result-title').textContent='No missed drills.';tl('timeline-result-copy').textContent='Try a full set of timeline drills first.';tl('timeline-retry').hidden=true;return}
+  tlShow('question');tlRender();
+}
+function tlRender(){
+  tlHideTimecodeGuide();
+  const d=tlQueue[tlIndex];tlAnswered=false;[tlStart,tlEnd]=d.initial;
+  tl('timeline-mode-label').textContent='TIMELINE DRILL · 24 FPS';tl('timeline-progress-label').textContent=`${tlIndex+1} of ${tlQueue.length}`;
+  const percent=Math.round(tlIndex/tlQueue.length*100);tl('timeline-progress-fill').style.width=`${percent}%`;tl('timeline-progress').setAttribute('aria-valuenow',percent);
+  tl('timeline-category').textContent=d.category;tl('timeline-question').textContent=d.question;tl('timeline-instruction').textContent=d.instruction;
+  tl('event-text').textContent=d.second?'SUBTITLE A':'SUBTITLE';tl('ideal-event').hidden=true;
+  tl('second-event').hidden=!d.second;if(d.second){tl('second-event').style.left=`${d.second[0]/TL_FRAMES*100}%`;tl('second-event').style.width=`${(d.second[1]-d.second[0])/TL_FRAMES*100}%`;tl('second-event').textContent='SUBTITLE B'}
+  tl('shot-layer').replaceChildren(...d.cuts.map(frame=>{const marker=document.createElement('div');marker.className='shot-marker';marker.style.left=`${frame/TL_FRAMES*100}%`;marker.innerHTML='<span>SHOT CHANGE</span>';return marker}));
+  const ticks=Array.from({length:TL_FRAMES+1},(_,frame)=>{
+    const mark=document.createElement('i');
+    mark.className=`frame-tick ${frame%24===0?'major':frame%6===0?'quarter':'minor'}`;
+    mark.style.left=`${frame/TL_FRAMES*100}%`;
+    return mark;
+  });
+  const labels=[0,24,48,72,96].map(frame=>{const label=document.createElement('span');label.textContent=tc(frame);label.style.left=`${frame/TL_FRAMES*100}%`;return label});
+  tl('ruler').replaceChildren(...ticks,...labels);
+  for(const id of ['start-slider','end-slider','start-handle','end-handle'])tl(id).disabled=false;
+  tl('event').classList.remove('locked');tl('check-timing').hidden=false;tl('timeline-feedback').hidden=true;tl('timeline-next').hidden=true;
+  tl('timeline-next').textContent=tlIndex+1===tlQueue.length?'See results':'Next drill';tlUpdate();tlDrawWave();
+}
+function frameOffsetText(offset,reference='end'){
+  if(reference==='start')return offset===0?'on the first frame of audio':`${Math.abs(offset)} frame${Math.abs(offset)===1?'':'s'} ${offset>0?'after':'before'} first frame of audio`;
+  if(offset===0)return `0 frames · at audio ${reference}`;
+  return `${offset>0?'+':'−'}${Math.abs(offset)} frame${Math.abs(offset)===1?'':'s'} ${offset>0?'after':'before'} audio ${reference}`;
+}
+function frameOffsetInfo(drill,frame,reference){
+  const neighbor=reference==='end'?drill.second:drill.previous;
+  const neighborFrame=neighbor?.[reference==='end'?0:1];
+  if(Number.isFinite(neighborFrame)&&Math.abs(frame-neighborFrame)<=12){
+    const offset=frame-neighborFrame,name=reference==='end'?'next subtitle':'previous subtitle';
+    return {reference:'subtitle',text:offset===0?`at ${name}`:`${Math.abs(offset)} frame${Math.abs(offset)===1?'':'s'} ${offset>0?'after':'before'} ${name}`};
+  }
+  const nearest=(drill.cuts||[]).reduce((best,cut)=>best===null||Math.abs(frame-cut)<Math.abs(frame-best)?cut:best,null);
+  if(nearest!==null&&Math.abs(frame-nearest)<=12){
+    const offset=frame-nearest;
+    return {reference:'shot',text:offset===0?'on the shot change':`${Math.abs(offset)} frame${Math.abs(offset)===1?'':'s'} ${offset>0?'after':'before'} shot change`};
+  }
+  return {reference:'audio',text:frameOffsetText(frame-drill.audio[0][reference==='start'?0:1],reference)};
+}
+function tlUpdateOffset(){
+  for(const reference of ['start','end']){
+  const badge=tl(reference==='start'?'frame-offset-start':'frame-offset');
+  badge.hidden=!tl('show-frame-offset').checked||!tlPointer||!tlQueue[tlIndex]||(tlPointer.kind!=='move'&&tlPointer.kind!==reference);
+  if(badge.hidden)continue;
+  const frame=reference==='start'?tlStart:tlEnd;
+  const offset=frameOffsetInfo(tlQueue[tlIndex],frame,reference);
+  badge.textContent=offset.text;
+  badge.dataset.reference=offset.reference;
+  const track=tl('track'),editor=tl('editor');
+  const edge=track.offsetLeft+track.clientWidth*frame/TL_FRAMES;
+  const half=badge.offsetWidth/2;
+  const center=Math.max(half+6,Math.min(editor.clientWidth-half-6,edge));
+  badge.style.left=`${center}px`;
+  badge.style.top=`${track.offsetTop+38+(tlPointer.kind==='move'&&reference==='end'?40:0)}px`;
+  badge.style.setProperty('--pointer-x',`${Math.max(6,Math.min(badge.offsetWidth-6,edge-center+half))}px`);
+  }
+}
+function tlUpdate(){
+  tlUpdateOffset();
+  tl('event').style.left=`${tlStart/TL_FRAMES*100}%`;tl('event').style.width=`${(tlEnd-tlStart)/TL_FRAMES*100}%`;
+  tl('start-value').textContent=tc(tlStart);tl('end-value').textContent=tc(tlEnd);
+  tl('duration-value').textContent=`${tlEnd-tlStart} frame${tlEnd-tlStart===1?'':'s'}`;
+  const tooShort=tlEnd-tlStart<20;
+  tl('event').classList.toggle('is-too-short',tooShort);
+  tl('duration-value').classList.toggle('is-too-short',tooShort);
+  tl('start-slider').value=tlStart;tl('end-slider').value=tlEnd;
+  tl('start-slider').setAttribute('aria-valuetext',tc(tlStart));tl('end-slider').setAttribute('aria-valuetext',tc(tlEnd));
+}
+function tlSet(which,value){if(tlAnswered)return;const frame=Math.max(0,Math.min(TL_FRAMES,Math.round(value)));
+  if(which==='start')tlStart=Math.min(frame,tlEnd-1);else if(which==='end')tlEnd=Math.max(frame,tlStart+1);tlUpdate()}
+function tlDrawWave(){
+  const wave=tl('waveform'),d=tlQueue[tlIndex];if(!d)return;
+  // Fixed viewBox coordinates keep drawing independent of hidden/unfinished layout.
+  wave.setAttribute('viewBox','0 0 960 188');
+  wave.setAttribute('preserveAspectRatio','none');
+  const paths={audio:[],quiet:[]};
+  for(let x=0;x<960;x+=3){
+    const frame=x/960*TL_FRAMES;
+    const audio=d.audio.find(([a,b])=>frame>=a&&frame<=b);
+    const taper=audio?Math.min(1,(frame-audio[0]+1)/5,(audio[1]-frame+1)/5):0;
+    const waveX=d.waveSeed?frame*(7+d.waveSeed*.23)+d.waveSeed*19:x;
+    const detail=Math.abs(Math.sin(waveX*.135)*Math.sin(waveX*.043+1.8))*.62+Math.abs(Math.sin(waveX*.37+.6))*.25;
+    const height=audio?(9+detail*62)*Math.max(.24,taper):2+detail*5;
+    paths[audio?'audio':'quiet'].push(`M${x},${94-height/2}v${height}`);
+  }
+  wave.replaceChildren(...['quiet','audio'].map(kind=>{
+    const path=document.createElementNS('http://www.w3.org/2000/svg','path');
+    path.setAttribute('d',paths[kind].join(' '));path.setAttribute('stroke',kind==='audio'?'#83a9d4':'#536675');
+    path.setAttribute('stroke-width','2.2');path.setAttribute('fill','none');return path;
+  }));
+}
+function tlCheck(){if(tlAnswered)return;const d=tlQueue[tlIndex],success=d.check(tlStart,tlEnd);tlAnswered=true;
+  if(success){tlCorrect++;timelineMisses.delete(d.id)}else timelineMisses.set(d.id,[tlStart,tlEnd]);tlPersist();
+  for(const id of ['start-slider','end-slider','start-handle','end-handle'])tl(id).disabled=true;
+  tl('event').classList.add('locked');tl('check-timing').hidden=true;
+  if(!success){tl('ideal-event').style.left=`${d.ideal[0]/TL_FRAMES*100}%`;tl('ideal-event').style.width=`${(d.ideal[1]-d.ideal[0])/TL_FRAMES*100}%`;tl('ideal-event').hidden=false}
+  const feedback=tl('timeline-feedback');feedback.className=`feedback timeline-feedback ${success?'correct':'incorrect'}`;
+  const result=tlEdgeAssessment(d,tlStart,tlEnd);
+  const heading=success?'Nice timing.':!result.inOk&&!result.outOk?'Check both edges.':!result.inOk?'Check the in-time.':!result.outOk?'Check the out-time.':'Check the duration.';
+  const row=(label,ok,detail)=>`<div class="timing-assessment ${ok?'is-right':'is-wrong'}"><span class="timing-symbol" aria-hidden="true">${ok?'✓':'✕'}</span><div><strong>${label}: ${ok?'Correct':'Needs work'}</strong><p>${escapeHTML(detail)}</p></div></div>`;
+  const durationRow=d.second
+    ?row('Subtitle A duration',result.durationOk,result.durationText)+row('Subtitle B duration',d.second[1]-d.second[0]>=20,`${d.second[1]-d.second[0]} frames (minimum: 20 frames).`)
+    :!result.durationOk||(result.inOk&&result.outOk)?row('Duration',result.durationOk,result.durationText):'';
+  feedback.innerHTML=`<strong class="timing-feedback-title">${heading}</strong><div class="timing-assessments">${row('In-time',result.inOk,result.inText)}${row('Out-time',result.outOk,result.outText)}${durationRow}</div><div class="timing-rule"><span class="timing-info-icon" aria-hidden="true">i</span><div><strong>Why</strong><p>${escapeHTML(d.why)}</p>${!success?`<p class="ideal-note">${d.id==='shot-end'?'The ideal timing: set the in-time to 00:00:16:00 and the out-time to 00:00:18:00.':`The ideal timing: set the in-time to ${tc(d.ideal[0])} and the out-time to ${tc(d.ideal[1])}.`}</p>`:''}</div></div><a href="${TL_SOURCE}" target="_blank" rel="noopener noreferrer">Check Netflix timing guidelines</a>`;
+  feedback.hidden=false;tl('timeline-next').hidden=false;tlLinkTimecodes();
+}
+function tlNext(){if(!tlAnswered)return;tlIndex++;if(tlIndex<tlQueue.length){tlRender();tl('timeline-question').focus()}else{
+  tlShow('result');tl('timeline-progress-fill').style.width='100%';tl('timeline-progress').setAttribute('aria-valuenow',100);
+  tl('timeline-result-title').textContent=`${tlCorrect} of ${tlQueue.length} timed well`;
+  tl('timeline-result-copy').textContent=timelineMisses.size?`${timelineMisses.size} timing decision${timelineMisses.size===1?'':'s'} to review. Look at the example placements, then retry.`:'All clear. You can run the timeline drills again.';
+  tl('timeline-retry').hidden=timelineMisses.size===0;tl('timeline-result-title').focus();
+}}
+function timelineReview(){tlPrevious=tlView;const list=tl('timeline-review-list');list.replaceChildren();
+  for(const [id,attempt] of timelineMisses){const d=DRILLS.find(item=>item.id===id);if(!d)continue;const card=document.createElement('article');card.className='review-card';
+    const tag=document.createElement('span');tag.className='category';tag.textContent=d.category;card.append(tag);
+    const title=document.createElement('h3');title.textContent=d.question;card.append(title);
+    const tried=document.createElement('p');tried.className='muted';tried.textContent=`Your event: ${frameRange(attempt[0],attempt[1])}`;card.append(tried);
+    const ideal=document.createElement('p');ideal.textContent=`One valid placement: ${frameRange(d.ideal[0],d.ideal[1])}`;card.append(ideal);
+    const why=document.createElement('p');why.textContent=d.why;card.append(why);list.append(card);
+  }
+  tlShow('review');tl('timeline-review-view').querySelector('h2').focus();
+}
+window.timelineTrainer={begin:timelineBegin,review:timelineReview,missCount:()=>timelineMisses.size};
+tlPersist();
+
+// Pointer movement is mapped to the frame ruler; sliders provide exact keyboard and touch input.
+function frameAt(event){const rect=tl('track').getBoundingClientRect();return Math.max(0,Math.min(TL_FRAMES,Math.round((event.clientX-rect.left)/rect.width*TL_FRAMES)))}
+function startDrag(kind,event){if(tlAnswered)return;event.preventDefault();event.stopPropagation();tlPointer={kind,origin:frameAt(event),start:tlStart,end:tlEnd};tlUpdateOffset();window.addEventListener('pointermove',dragMove);window.addEventListener('pointerup',endDrag,{once:true});window.addEventListener('pointercancel',endDrag,{once:true});window.addEventListener('blur',endDrag,{once:true})}
+function dragMove(event){if(!tlPointer)return;const current=frameAt(event),delta=current-tlPointer.origin;
+  if(tlPointer.kind==='move'){const length=tlPointer.end-tlPointer.start;tlStart=Math.max(0,Math.min(TL_FRAMES-length,tlPointer.start+delta));tlEnd=tlStart+length;tlUpdate()}
+  else tlSet(tlPointer.kind,(tlPointer.kind==='start'?tlPointer.start:tlPointer.end)+delta);
+}
+function endDrag(){tlPointer=null;tlUpdateOffset();window.removeEventListener('pointermove',dragMove);window.removeEventListener('pointerup',endDrag);window.removeEventListener('pointercancel',endDrag);window.removeEventListener('blur',endDrag)}
+tl('show-frame-offset').checked=false;
+tl('show-frame-offset').addEventListener('change',tlUpdateOffset);
+tl('start-handle').addEventListener('pointerdown',event=>startDrag('start',event));tl('end-handle').addEventListener('pointerdown',event=>startDrag('end',event));
+tl('event').addEventListener('pointerdown',event=>{if(event.target.closest('.event-handle'))return;startDrag('move',event)});
+tl('start-slider').addEventListener('input',event=>tlSet('start',event.target.value));tl('end-slider').addEventListener('input',event=>tlSet('end',event.target.value));
+tl('check-timing').addEventListener('click',tlCheck);tl('timeline-next').addEventListener('click',tlNext);
+tl('timeline-retry').addEventListener('click',()=>timelineBegin(true));tl('timeline-restart').addEventListener('click',()=>timelineBegin());
+tl('timeline-review-retry').addEventListener('click',()=>timelineBegin(true));tl('timeline-back').addEventListener('click',()=>tlShow(tlPrevious));
+tl('timeline-tab').addEventListener('click',()=>timelineBegin());tl('rules-tab').addEventListener('click',()=>begin());
+tl('timeline-question').tabIndex=-1;tl('timeline-result-title').tabIndex=-1;tl('timeline-review-view').querySelector('h2').tabIndex=-1;
+window.addEventListener('resize',()=>{if(activeMode==='timeline'&&tlView==='question'){tlDrawWave();tlUpdateOffset()}});
+
+let tlGuideTarget=null;
+function timecodeFrame(value){
+  const [h,m,s,f]=value.split(':').map(Number);
+  return ((h*60+m)*60+s-15)*24+f;
+}
+function tlHideTimecodeGuide(){
+  if(tlGuideTarget)tlGuideTarget.classList.remove('is-guided');
+  tlGuideTarget=null;
+  const guide=tl('timecode-guide');if(guide)guide.hidden=true;
+}
+function tlShowTimecodeGuide(target){
+  tlHideTimecodeGuide();if(!target)return;
+  const frame=Number(target.dataset.frame);
+  if(!Number.isFinite(frame)||frame<0||frame>TL_FRAMES)return;
+  tlGuideTarget=target;target.classList.add('is-guided');
+  const guide=tl('timecode-guide'),track=tl('track'),ruler=tl('ruler');
+  const trackRect=track.getBoundingClientRect(),editorRect=tl('editor').getBoundingClientRect();
+  const x=trackRect.left-editorRect.left-tl('editor').clientLeft+trackRect.width*frame/TL_FRAMES;
+  guide.hidden=false;guide.style.left=x+'px';guide.style.top=ruler.offsetTop+'px';
+  guide.style.height=(track.offsetTop+track.clientHeight-ruler.offsetTop)+'px';
+  const label=guide.firstElementChild;label.textContent=target.textContent;
+  const half=label.offsetWidth/2,editor=tl('editor');
+  const center=Math.max(half+4,Math.min(editor.clientWidth-half-4,x));
+  label.style.left=(center-x)+'px';
+}
+function tlLinkTimecodes(){
+  tlHideTimecodeGuide();
+  const feedback=tl('timeline-feedback');
+  const walker=document.createTreeWalker(feedback,NodeFilter.SHOW_TEXT);
+  const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+  for(const node of nodes){
+    const text=node.nodeValue,re=/\b\d{2}:\d{2}:\d{2}:\d{2}\b/g;
+    const matches=[...text.matchAll(re)];if(!matches.length)continue;
+    const fragment=document.createDocumentFragment();let from=0;
+    for(const match of matches){
+      fragment.append(document.createTextNode(text.slice(from,match.index)));
+      const frame=timecodeFrame(match[0]);
+      if(frame>=0&&frame<=TL_FRAMES){
+        const button=document.createElement('button');button.type='button';button.className='feedback-timecode';
+        button.dataset.frame=frame;button.textContent=match[0];
+        button.setAttribute('aria-label','Show '+match[0]+' on the timeline');
+        button.addEventListener('pointerenter',()=>tlShowTimecodeGuide(button));
+        button.addEventListener('focus',()=>tlShowTimecodeGuide(button));
+        for(const name of ['pointerleave','blur'])button.addEventListener(name,()=>{if(tlGuideTarget===button)tlHideTimecodeGuide()});
+        button.addEventListener('keydown',event=>{if(event.key==='Escape')tlHideTimecodeGuide()});
+        fragment.append(button);
+      }else fragment.append(document.createTextNode(match[0]));
+      from=match.index+match[0].length;
+    }
+    fragment.append(document.createTextNode(text.slice(from)));node.replaceWith(fragment);
+  }
+}
+const timecodeGuide=document.createElement('div');timecodeGuide.id='timecode-guide';timecodeGuide.hidden=true;
+timecodeGuide.setAttribute('aria-hidden','true');timecodeGuide.append(document.createElement('span'));tl('editor').append(timecodeGuide);
+window.addEventListener('blur',tlHideTimecodeGuide);
+window.addEventListener('resize',()=>{if(tlGuideTarget)tlShowTimecodeGuide(tlGuideTarget)});
+
+timelineBegin();
+
+</script>
+</body>
+</html>
